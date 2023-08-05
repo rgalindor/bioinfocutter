@@ -17,6 +17,7 @@ matplotlib = "^3.7.1"
 plotly = "^5.15.0"
 dvc = "^2.10.0"
 pdoc3 = "^0.10.0"
+pre-commit = "^3.3.3"
 
 [tool.poetry.group.dev.dependencies]
 black = "^23.3.0"
