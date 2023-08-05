@@ -13,6 +13,8 @@ else
 HAS_CONDA=True
 endif
 
+SHELL=/bin/bash
+
 CONDA_ACTIVATE=source $$(conda info --base)/etc/profile.d/conda.sh ; conda activate
 
 # use this function to load modules on the cluster
@@ -59,7 +61,7 @@ ifeq (True,$(HAS_CONDA))
 	conda env create -f environment.yaml
 	@echo ">>> New conda env created. Activate with: "
 	@echo "conda activate $(PROJECT_NAME)"
-	conda activate $(PROJECT_NAME)
+	$(CONDA_ACTIVATE) $(PROJECT_NAME)
 	poetry install
 	poetry run pre-commit install
 else

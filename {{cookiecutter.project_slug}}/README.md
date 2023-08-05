@@ -77,4 +77,4 @@ poetry add <package-name>[@<version>]
 
 ## Contact info
 
-{{ cookiecutter.author }}
+[{{ cookiecutter.author }}](mailto:{{ cookiecutter.git_email }})
