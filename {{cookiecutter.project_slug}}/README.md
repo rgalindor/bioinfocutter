@@ -52,6 +52,8 @@ Init your project by:
 ```bash
 make init
 make create_environment
+conda activate {{ cookiecutter.project_slug }}
+make env
 ```
 
 ### Alternatives
