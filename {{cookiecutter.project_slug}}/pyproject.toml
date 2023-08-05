@@ -1,0 +1,56 @@
+[tool.poetry]
+name = "{{ cookiecutter.project_title }}"
+version = "0.1.0"
+description = "{{ cookiecutter.description }}"
+authors = ["{{ cookiecutter.author }}"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "{{ cookiecutter.python_version }}"
+ipykernel = "^6.23.2"
+notebook = "^6.5.4"
+numpy = "^1.24.3"
+pandas = "^2.0.2"
+ipywidgets = "^8.0.6"
+plotnine = "^0.12.1"
+matplotlib = "^3.7.1"
+plotly = "^5.15.0"
+dvc = "^2.10.0"
+pdoc3 = "^0.10.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+flake8 = "^6.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+# Exclude a variety of commonly ignored directories.
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".git-rewrite",
+    ".hg",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "venv",
+]
+
+# Same as Black.
+line-length = 88
+
