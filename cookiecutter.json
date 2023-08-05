@@ -3,6 +3,8 @@
         "project_slug": "{{ cookiecutter.project_title|lower|replace(' ', '_')|replace('-', '_') }}",
         "description": "Something cool to make bioinformatics",
         "author": "Your name",
+        "git_username": "{{ cookiecutter.author|lower|replace(' ', '_')|replace('-', '_') }}",
+        "git_email": "{{ cookiecutter.author|lower|replace(' ', '_')|replace('-', '_') }}@email.com",
         "project_packages": [
                 "All",
                 "Minimal"
